@@ -3,24 +3,19 @@
 <head>
   <meta charset="utf-8">
 
-  <!-- 使用 elitebot.dev 的 favicon -->
-  <link rel="icon" href="https://elitebot.dev/favicon.ico">
+  <!-- 強制指定 favicon（elitebot） -->
+  <link rel="icon" type="image/png" href="https://elitebot.dev/favicon.png">
+  <link rel="shortcut icon" href="https://elitebot.dev/favicon.png">
 
   <title>Greenhouse</title>
 
-  <!-- 立即跳轉到目標網站 -->
-  <meta http-equiv="refresh" content="0; url=https://skymutations.eu/#/greenhouse">
+  <script>
+    // 延遲跳轉，讓 Chrome 先吃到 favicon
+    setTimeout(() => {
+      location.replace("https://skymutations.eu/#/greenhouse");
+    }, 300);
+  </script>
 </head>
 <body>
 </body>
 </html>
-<head>
-  <meta charset="utf-8">
-
-  <!-- 強制 favicon -->
-  <link rel="icon" type="image/x-icon" href="https://elitebot.dev/favicon.ico">
-  <link rel="shortcut icon" href="https://elitebot.dev/favicon.ico">
-
-  <title>Greenhouse</title>
-  <meta http-equiv="refresh" content="0; url=https://skymutations.eu/#/greenhouse">
-</head>
