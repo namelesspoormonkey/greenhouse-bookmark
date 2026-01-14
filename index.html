@@ -3,17 +3,16 @@
 <head>
   <meta charset="utf-8">
 
-  <!-- 強制指定 favicon（elitebot） -->
-  <link rel="icon" type="image/png" href="https://elitebot.dev/favicon.png">
-  <link rel="shortcut icon" href="https://elitebot.dev/favicon.png">
+  <!-- 內嵌 elitebot favicon（base64） -->
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAY1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////+Yv1oVAAAAIHRSTlMAAQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyM0nZkAAABKSURBVBjTY2AgDGAEYmBgZGJkYmRiYGBgYGJiZmRgZGBkZmBiYGRkYGBgYmJkYGAAAM3oC0Z0Z9xQAAAABJRU5ErkJggg==">
 
   <title>Greenhouse</title>
 
   <script>
-    // 延遲跳轉，讓 Chrome 先吃到 favicon
+    // 延遲跳轉，確保 favicon 已被 Chrome 記住
     setTimeout(() => {
       location.replace("https://skymutations.eu/#/greenhouse");
-    }, 300);
+    }, 400);
   </script>
 </head>
 <body>
