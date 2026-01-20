@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8">
 
-  <!-- elitebot 風格 favicon（內嵌，Chrome 不會覆蓋） -->
-  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAY1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////+Yv1oVAAAAIHRSTlMAAQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyM0nZkAAABKSURBVBjTY2AgDGAEYmBgZGJkYmRiYGBgYGJiZmRgZGBkZmBiYGRkYGBgYmJkYGAAAM3oC0Z0Z9xQAAAABJRU5ErkJggg==">
+  <!-- favicon：Elitebot（穩定，不會被目標網站覆蓋） -->
+  <link rel="icon" href="https://elitebot.dev/favicon.ico">
 
-  <title>SkyBlock Tools</title>
+  <title>SkyBlock Hub</title>
 
   <style>
     body {
       margin: 0;
       height: 100vh;
-      background: #0b0b0b;
+      background: #0f1115;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -22,15 +22,15 @@
     .container {
       display: flex;
       flex-direction: column;
-      gap: 14px;
+      gap: 12px;
     }
 
     a {
       text-decoration: none;
       color: #ffffff;
-      background: #1f1f1f;
-      padding: 14px 26px;
-      border-radius: 12px;
+      background: #1a1d24;
+      padding: 14px 28px;
+      border-radius: 14px;
       text-align: center;
       font-size: 16px;
       transition: background 0.15s ease, transform 0.05s ease;
@@ -38,7 +38,7 @@
     }
 
     a:hover {
-      background: #2a2a2a;
+      background: #242834;
     }
 
     a:active {
@@ -46,47 +46,59 @@
     }
 
     .hint {
-      opacity: 0.6;
-      font-size: 13px;
-      margin-top: 6px;
-      text-align: center;
+      font-size: 12px;
+      opacity: 0.55;
+      margin-top: 4px;
     }
   </style>
 
   <script>
+    function openTab(url) {
+      window.open(url, "_blank", "noopener");
+    }
+
     document.addEventListener("keydown", (e) => {
-      // 避免在輸入框時誤觸（目前沒有 input，但保險）
       if (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA") return;
 
       switch (e.key) {
         case "1":
-          window.location.href = "https://skymutations.eu/#/greenhouse";
+          openTab("https://skymutations.eu/#/greenhouse");
           break;
         case "2":
-          window.location.href = "https://elitebot.dev/";
+          openTab("https://elitebot.dev/");
           break;
         case "3":
-          window.location.href = "https://sky.shiiyu.moe/";
+          openTab("https://sky.shiiyu.moe/");
+          break;
+        case "4":
+          openTab("https://hypixel.net/forums/skyblock-patch-notes.158/");
           break;
       }
     });
   </script>
 </head>
+
 <body>
   <div class="container">
-    <a href="https://skymutations.eu/#/greenhouse">
+    <a href="https://skymutations.eu/#/greenhouse" target="_blank" rel="noopener">
       Open Greenhouse
       <div class="hint">Press 1</div>
     </a>
 
-    <a href="https://elitebot.dev/">
+    <a href="https://elitebot.dev/" target="_blank" rel="noopener">
       Open Farming Weight
       <div class="hint">Press 2</div>
     </a>
 
-    <a href="https://sky.shiiyu.moe/">
+    <a href="https://sky.shiiyu.moe/" target="_blank" rel="noopener">
       Open SkyCrypt
       <div class="hint">Press 3</div>
+    </a>
+
+    <a href="https://hypixel.net/forums/skyblock-patch-notes.158/"
+       target="_blank" rel="noopener">
+      Patch notes
+      <div class="hint">Press 4</div>
     </a>
   </div>
 </body>
