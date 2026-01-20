@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <!-- favicon：Elitebot（穩定，不會被目標網站覆蓋） -->
+  <!-- favicon：Elitebot（避免被目標網站覆蓋） -->
   <link rel="icon" href="https://elitebot.dev/favicon.ico">
 
   <title>SkyBlock Hub</title>
@@ -20,16 +20,16 @@
     }
 
     .container {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
     }
 
     a {
       text-decoration: none;
       color: #ffffff;
       background: #1a1d24;
-      padding: 14px 28px;
+      padding: 18px 22px;
       border-radius: 14px;
       text-align: center;
       font-size: 16px;
@@ -48,7 +48,7 @@
     .hint {
       font-size: 12px;
       opacity: 0.55;
-      margin-top: 4px;
+      margin-top: 6px;
     }
   </style>
 
@@ -73,6 +73,12 @@
         case "4":
           openTab("https://hypixel.net/forums/skyblock-patch-notes.158/");
           break;
+        case "5":
+          openTab("https://wiki.hypixel.net/Main_Page");
+          break;
+        case "6":
+          openTab("https://hypixel-skyblock.fandom.com/wiki/Hypixel_SkyBlock_Wiki");
+          break;
       }
     });
   </script>
@@ -81,17 +87,17 @@
 <body>
   <div class="container">
     <a href="https://skymutations.eu/#/greenhouse" target="_blank" rel="noopener">
-      Open Greenhouse
+      Greenhouse
       <div class="hint">Press 1</div>
     </a>
 
     <a href="https://elitebot.dev/" target="_blank" rel="noopener">
-      Open Farming Weight
+      Farming Weight
       <div class="hint">Press 2</div>
     </a>
 
     <a href="https://sky.shiiyu.moe/" target="_blank" rel="noopener">
-      Open SkyCrypt
+      SkyCrypt
       <div class="hint">Press 3</div>
     </a>
 
@@ -99,6 +105,18 @@
        target="_blank" rel="noopener">
       Patch Notes
       <div class="hint">Press 4</div>
+    </a>
+
+    <a href="https://wiki.hypixel.net/Main_Page"
+       target="_blank" rel="noopener">
+      Official Wiki
+      <div class="hint">Press 5</div>
+    </a>
+
+    <a href="https://hypixel-skyblock.fandom.com/wiki/Hypixel_SkyBlock_Wiki"
+       target="_blank" rel="noopener">
+      Fandom Wiki
+      <div class="hint">Press 6</div>
     </a>
   </div>
 </body>
