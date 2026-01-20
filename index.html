@@ -3,18 +3,37 @@
 <head>
   <meta charset="utf-8">
 
-  <!-- 內嵌 elitebot favicon（base64） -->
+  <!-- elitebot 風格 favicon（內嵌） -->
   <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAY1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////+Yv1oVAAAAIHRSTlMAAQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyM0nZkAAABKSURBVBjTY2AgDGAEYmBgZGJkYmRiYGBgYGJiZmRgZGBkZmBiYGRkYGBgYmJkYGAAAM3oC0Z0Z9xQAAAABJRU5ErkJggg==">
 
   <title>Greenhouse</title>
 
-  <script>
-    // 延遲跳轉，確保 favicon 已被 Chrome 記住
-    setTimeout(() => {
-      location.replace("https://skymutations.eu/#/greenhouse");
-    }, 400);
-  </script>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #0b0b0b;
+      font-family: system-ui, sans-serif;
+    }
+    a {
+      color: #fff;
+      font-size: 18px;
+      text-decoration: none;
+      padding: 14px 22px;
+      border-radius: 10px;
+      background: #1f1f1f;
+    }
+    a:hover {
+      background: #2a2a2a;
+    }
+  </style>
 </head>
 <body>
+  <a href="https://skymutations.eu/#/greenhouse">
+    Open Greenhouse
+  </a>
 </body>
 </html>
